@@ -19,7 +19,7 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "preview": "electron-vite preview",
-    "lint": "eslint src electron",
+    "lint": "svelte-check --tsconfig ./tsconfig.json",
     "dist": "electron-vite build && electron-builder",
     "dist:win": "electron-vite build && node -e \"try{require('fs').rmSync('dist',{recursive:true,force:true})}catch(e){}\" && electron-builder --win",
     "dist:mac": "electron-vite build && electron-builder --mac",
