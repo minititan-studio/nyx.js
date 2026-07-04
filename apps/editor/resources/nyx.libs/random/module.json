@@ -1,0 +1,17 @@
+{
+    "main": {
+        "name": "random",
+        "tagline": "Compute random stuff!",
+        "tagline_Ru": "Вычисляй случайные значения!",
+        "tagline_Pl": "Oblicz wartości losowe!",
+        "icon": "sort-numerically",
+        "version": "2.0.0",
+        "authors": [{
+            "name": "Cosmo Myzrail Gorynych",
+            "mail": "admin@nersta.ru"
+        }],
+        "categories": [
+            "utilities"
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "main": {
+        "name": "nyx.transition",
+        "tagline": "Add nice and smooth transitions between levels, or whenever you need them.",
+        "tagline_Ru": "Ð”Ð¾Ð±Ð°Ð²ÑŒ ÐºÑ€Ð°ÑÐ¸Ð²Ñ‹Ðµ Ð¿Ð»Ð°Ð²Ð½Ñ‹Ðµ Ð¿ÐµÑ€ÐµÑ…Ð¾Ð´Ñ‹ Ð¼ÐµÐ¶Ð´Ñƒ ÑƒÑ€Ð¾Ð²Ð½ÑÐ¼Ð¸, Ð¸Ð»Ð¸ Ð²Ñ‹Ð·Ð¾Ð²Ð¸ Ð¸Ñ… ÐºÐ¾Ð³Ð´Ð° ÑƒÐ³Ð¾Ð´Ð½Ð¾.",
+        "tagline_Pl": "Dodaj Å‚adne i pÅ‚ynne przejÅ›cia miÄ™dzy poziomami albo wszÄ™dzie tam, gdzie ich potrzebujesz.",
+        "version": "1.0.0",
+        "icon": "monitor",
+        "authors": [{
+            "name": "Cosmo Myzrail Gorynych",
+            "mail": "admin@nersta.ru"
+        }],
+        "categories": [
+            "fx"
+        ]
+    },
+    "dependencies": ["tween"]
+}

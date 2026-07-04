@@ -1,0 +1,42 @@
+{
+    "main": {
+        "name": "Virtual Keys",
+        "name_Ru": "Виртуальные клавиши",
+        "name_Pl": "Wirtualne przyciski",
+        "tagline": "Create on-screen buttons and joysticks and listen to them in Actions system.",
+        "tagline_Ru": "Создай экранные кнопки и джойстики и слушай за их событиями в системе Действий.",
+        "tagline_Pl": "Twórz przyciski i joysticki na ekranie oraz reaguj na ich zdarzenia w systemie Akcji.",
+        "version": "3.0.0",
+        "authors": [{
+            "name": "Cosmo Myzrail Gorynych",
+            "mail": "admin@nersta.ru"
+        }],
+        "categories": [
+            "inputs",
+            "mobile"
+        ]
+    },
+    "inputMethods": {
+        "Vk1": "Virtual key 1",
+        "Vk2": "Virtual key 2",
+        "Vk3": "Virtual key 3",
+        "Vk4": "Virtual key 4",
+        "Vk5": "Virtual key 5",
+        "Vk6": "Virtual key 6",
+        "Vk7": "Virtual key 7",
+        "Vk8": "Virtual key 8",
+        "Vk9": "Virtual key 9",
+        "Vk10": "Virtual key 10",
+        "Vk11": "Virtual key 11",
+        "Vk12": "Virtual key 12",
+        "Vjoy1X": "1st virtual joystick, X axis",
+        "Vjoy1Y": "1st virtual joystick, Y axis",
+        "Vjoy2X": "2nd virtual joystick, X axis",
+        "Vjoy2Y": "2nd virtual joystick, Y axis",
+        "Vjoy3X": "3rd virtual joystick, X axis",
+        "Vjoy3Y": "3rd virtual joystick, Y axis",
+        "Vjoy4X": "4th virtual joystick, X axis",
+        "Vjoy4Y": "4th virtual joystick, Y axis"
+    },
+    "optionalDependencies": ["pointer"]
+}

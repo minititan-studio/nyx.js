@@ -1,0 +1,29 @@
+{
+    "main": {
+        "name": "yarn",
+        "tagline": "Use YarnSpinner projects to create interactive dialogues in your game.",
+        "version": "1.0.0",
+        "authors": [{
+            "name": "Cosmo Myzrail Gorynych",
+            "mail": "admin@nersta.ru"
+        }],
+        "categories": [
+            "integrations"
+        ]
+    },
+    "fields": [{
+        "name": "Skip empty lines",
+        "help": "Allows you to write empty lines in YarnEditor for better readability.",
+        "key": "skipEmpty",
+        "id": "skipEmpty",
+        "default": true,
+        "type": "checkbox"
+    }, {
+        "name": "Use magic commands",
+        "help": "Automatically execute commands `<<room(\"RoomName\")>>`, `<<sound(\"SoundName\")>>` and `<<wait(1000)>>` and call `next()` after them.",
+        "key": "magic",
+        "id": "magic",
+        "default": true,
+        "type": "checkbox"
+    }]
+}

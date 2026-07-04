@@ -1,0 +1,96 @@
+{
+    "main": {
+        "name": "Splash screen",
+        "name_Ru": "Вступительный экран-обложка",
+        "name_Pl": "Ekran powitalny (Splash)",
+        "tagline": "Create splash screens at project settings.",
+        "tagline_Ru": "Создай вступительное интро с помощью настроек проекта.",
+        "tagline_Pl": "Twórz ekrany startowe w ustawieniach projektu.",
+        "icon": "monitor",
+        "version": "0.0.0",
+        "authors": [{
+            "name": "Cosmo Myzrail Gorynych",
+            "mail": "admin@nersta.ru"
+        }],
+        "categories": [
+            "customization"
+        ]
+    },
+    "dependencies": ["tween"],
+    "fields": [{
+        "name": "Show Nyx branding slide",
+        "key": "showNyxBranding",
+        "default": true,
+        "type": "checkbox",
+        "help": "Adds a 'Made with Nyx' preset slide at the start of your slides list. You can adjust its duration and effect."
+    }, {
+        "name": "Transition duration, ms",
+        "name_Ru": "Длительность перехода, мс",
+        "name_Pl": "Czas trwania przejścia (ms)",
+        "key": "transitionDuration",
+        "default": 500,
+        "type": "number",
+        "min": 0,
+        "help": "Fade-in and fade-out duration shared by all slides."
+    }, {
+        "name": "Background color",
+        "name_Ru": "Цвет фона",
+        "name_Pl": "Kolor tła",
+        "key": "backgroundColor",
+        "default": "#000000",
+        "type": "color"
+    }, {
+        "name": "Transition color",
+        "name_Ru": "Цвет перехода",
+        "name_Pl": "Kolor przejścia",
+        "key": "transitionColor",
+        "default": "#000000",
+        "type": "color"
+    }, {
+        "name": "Skip slides on mouse click / touch / key press / gamepad input. (Requires at least one of the modules that provide inputs for these.)",
+        "key": "skippable",
+        "default": true,
+        "type": "checkbox"
+    }, {
+        "name": "Slides",
+        "name_Ru": "Слайды",
+        "name_Pl": "Slajdy",
+        "key": "slides",
+        "default": [],
+        "type": "table",
+        "fields": [{
+            "name": "Logo texture",
+            "key": "texture@@texture",
+            "default": -1,
+            "type": "texture"
+        }, {
+            "name": "Effect",
+            "key": "effect",
+            "type": "select",
+            "default": "none",
+            "options": [{
+                "value": "none",
+                "name": "None"
+            }, {
+                "value": "zoomIn",
+                "name": "Zoom in"
+            }, {
+                "value": "zoomOut",
+                "name": "Zoom out"
+            }]
+        }, {
+            "name": "Duration, ms",
+            "key": "duration",
+            "default": 2000,
+            "type": "number",
+            "min": 100,
+            "help": "How long this slide is shown (including fade-in and fade-out)."
+        }, {
+            "name": "Fill",
+            "key": "fill",
+            "type": "checkbox",
+            "default": false,
+            "help": "If enabled, the logo fills the screen proportionally; otherwise it is shown at half-screen size."
+        }]
+    }]
+}
