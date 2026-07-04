@@ -1,0 +1,23 @@
+{
+  "name": "@nyx/runtime",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "ct.js PixiJS 7 game runtime — isolated from the editor (Phase 3)",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@nyx/engine": "workspace:*",
+    "@pixi/particle-emitter": "5.0.8",
+    "@pixi/sound": "^5.2.3",
+    "pixi.js": "7.3.2",
+    "pixi.js-legacy": "7.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.2.6"
+  }
+}
