@@ -1,0 +1,23 @@
+{
+  "name": "@nyx/project-format",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Nyx project serialization, validation, and migration scripts (Phase 6)",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nyx/shared": "workspace:*",
+    "js-yaml": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.12.7",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.8.3"
+  }
+}
