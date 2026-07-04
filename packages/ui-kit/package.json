@@ -1,0 +1,42 @@
+{
+  "name": "@nyx/ui-kit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Shared Svelte UI components — ported from src/riotTags/shared (Phase 5)",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "svelte": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./ColorPicker.svelte": "./src/ColorPicker.svelte",
+    "./ColorInput.svelte": "./src/ColorInput.svelte",
+    "./NumberInput.svelte": "./src/NumberInput.svelte",
+    "./ModalWindow.svelte": "./src/ModalWindow.svelte",
+    "./CollapsibleSection.svelte": "./src/CollapsibleSection.svelte",
+    "./HoverHint.svelte": "./src/HoverHint.svelte",
+    "./ArrayEditor.svelte": "./src/ArrayEditor.svelte",
+    "./ZoomSlider.svelte": "./src/ZoomSlider.svelte",
+    "./TooltipLayer.svelte": "./src/TooltipLayer.svelte"
+  },
+  "scripts": {
+    "build": "vite build",
+    "check": "svelte-check"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@nyx/shared": "workspace:*",
+    "svelte": "^5.25.6"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "svelte-check": "^4.0.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.6"
+  }
+}
