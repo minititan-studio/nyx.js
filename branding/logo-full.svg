@@ -1,0 +1,16 @@
+<svg viewBox="0 0 258 72" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="nyx.js">
+  <defs>
+    <linearGradient id="g" x1="18" y1="10" x2="40" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B15CF7"/><stop offset="0.5" stop-color="#B646DC"/><stop offset="1" stop-color="#E24AA0"/>
+    </linearGradient>
+    <mask id="c"><rect width="64" height="64" fill="#000"/><circle cx="26" cy="32" r="24" fill="#fff"/><circle cx="43" cy="30" r="21.5" fill="#000"/></mask>
+  </defs>
+  <g transform="translate(2,4)">
+    <circle cx="26" cy="32" r="24" fill="url(#g)" mask="url(#c)"/>
+    <rect x="39" y="13" width="8.4" height="8.4" rx="2.1" fill="#22D3EE"/>
+    <rect x="50" y="21.5" width="8.4" height="8.4" rx="2.1" fill="url(#g)"/>
+    <rect x="40.5" y="30" width="7.2" height="7.2" rx="1.8" fill="url(#g)"/>
+    <rect x="51" y="35.5" width="8.4" height="8.4" rx="2.1" fill="url(#g)"/>
+  </g>
+  <text x="80" y="48" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="40" font-weight="800" letter-spacing="-1.5" fill="#151A2E">nyx<tspan fill="#B646DC">.js</tspan></text>
+</svg>

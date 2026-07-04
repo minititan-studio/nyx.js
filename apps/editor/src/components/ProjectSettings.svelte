@@ -216,7 +216,7 @@
         try {
             const text = await (await fetch(`file://${result.filePaths[0]}`)).text();
             const preset = JSON.parse(text);
-            if (!preset?.actions) { await showAlert('Not a valid ct.js action preset.'); return; }
+            if (!preset?.actions) { await showAlert('Not a valid nyx.js action preset.'); return; }
             if (preset.inputModules?.length) await ensureModulesEnabled(preset.inputModules);
             if (!$currentProject) return;
             $currentProject.actions = preset.actions;
@@ -228,7 +228,7 @@
 
     async function exportActionPreset() {
         if (!$currentProject) return;
-        const title = ($currentProject.settings?.authoring as { title?: string } | undefined)?.title ?? 'ct.js project';
+        const title = ($currentProject.settings?.authoring as { title?: string } | undefined)?.title ?? 'nyx.js project';
         const result = await electronAPI().dialog.showSaveDialog({
             title: 'Export action preset',
             defaultPath: `Actions from ${title}.json`,
@@ -1124,12 +1124,12 @@
                     <label class="block checkbox">
                         <input type="checkbox" checked={b.hideLoadingLogo}
                                onchange={(e) => setBranding('hideLoadingLogo', (e.target as HTMLInputElement).checked)} />
-                        <span>Hide ct.js logo on loading screen</span>
+                        <span>Hide nyx.js logo on loading screen</span>
                     </label>
                     <label class="block checkbox">
                         <input type="checkbox" checked={b.alternativeLogo}
                                onchange={(e) => setBranding('alternativeLogo', (e.target as HTMLInputElement).checked)} />
-                        <span>Use alternative ct.js logo</span>
+                        <span>Use alternative nyx.js logo</span>
                     </label>
                 </fieldset>
 

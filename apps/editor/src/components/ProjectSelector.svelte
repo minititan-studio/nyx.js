@@ -446,11 +446,21 @@
         <!-- Right aside: branding + links -->
         <aside class="flexcol project-selector-aside">
             <div class="project-selector-logo">
-                <svg viewBox="0 0 100 100" class="anIllustration wide" aria-label="Nyx Studio logo">
-                    <text y="60" x="50" text-anchor="middle" font-size="28" font-weight="700"
-                          fill="currentColor">Nyx</text>
-                    <text y="80" x="50" text-anchor="middle" font-size="12"
-                          fill="currentColor" opacity="0.6">Studio</text>
+                <svg viewBox="0 0 258 72" class="anIllustration wide" aria-label="nyx.js logo">
+                    <defs>
+                        <linearGradient id="psMoon" x1="18" y1="10" x2="40" y2="64" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#B15CF7"/><stop offset="0.5" stop-color="#B646DC"/><stop offset="1" stop-color="#E24AA0"/>
+                        </linearGradient>
+                        <mask id="psCrescent"><rect width="64" height="64" fill="#000"/><circle cx="26" cy="32" r="24" fill="#fff"/><circle cx="43" cy="30" r="21.5" fill="#000"/></mask>
+                    </defs>
+                    <g transform="translate(2,4)">
+                        <circle cx="26" cy="32" r="24" fill="url(#psMoon)" mask="url(#psCrescent)"/>
+                        <rect x="39" y="13" width="8.4" height="8.4" rx="2.1" fill="#22D3EE"/>
+                        <rect x="50" y="21.5" width="8.4" height="8.4" rx="2.1" fill="url(#psMoon)"/>
+                        <rect x="40.5" y="30" width="7.2" height="7.2" rx="1.8" fill="url(#psMoon)"/>
+                        <rect x="51" y="35.5" width="8.4" height="8.4" rx="2.1" fill="url(#psMoon)"/>
+                    </g>
+                    <text x="80" y="48" font-size="40" font-weight="800" letter-spacing="-1.5" fill="currentColor">nyx<tspan fill="#B646DC">.js</tspan></text>
                 </svg>
             </div>
 
@@ -468,11 +478,11 @@
             <div class="center project-selector-SocialLinks">
                 <!-- eslint-disable-next-line no-script-url -->
                 <button class="inline" title="GitHub"
-                        onclick={() => openExternal('https://github.com/ct-js/ct-js')}>
+                        onclick={() => openExternal('https://github.com/minititan-studio/nyx.js')}>
                     <Icon icon="feather:github" aria-hidden="true" class="feather"/>
                 </button>
                 <button class="inline" title="Discord"
-                        onclick={() => openExternal('https://discord.gg/yuvuDW5')}>
+                        onclick={() => openExternal('https://discord.gg/nyxjs')}>
                     <Icon icon="feather:message-circle" aria-hidden="true" class="feather"/>
                 </button>
             </div>

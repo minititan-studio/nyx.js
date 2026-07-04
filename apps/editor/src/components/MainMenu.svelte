@@ -226,19 +226,19 @@
                 About Nyx
             </h3>
             <div class="section-body links">
-                <button class="inline" onclick={() => openLink('https://ctjs.rocks/')}>
+                <button class="inline" onclick={() => openLink('https://nyxjs.dev/')}>
                     <Icon icon="feather:globe" class="feather"/>
                     website
                 </button>
-                <button class="inline" onclick={() => openLink('https://docs.ctjs.rocks/')}>
+                <button class="inline" onclick={() => openLink('https://docs.nyxjs.dev/')}>
                     <Icon icon="feather:book-open" class="feather"/>
                     Documentation
                 </button>
-                <button class="inline" onclick={() => openLink('https://discord.gg/ctjs')}>
+                <button class="inline" onclick={() => openLink('https://discord.gg/nyxjs')}>
                     <Icon icon="feather:message-circle" class="feather"/>
                     Community Discord
                 </button>
-                <button class="inline" onclick={() => openLink('https://github.com/ct-js/ct-js')}>
+                <button class="inline" onclick={() => openLink('https://github.com/minititan-studio/nyx.js')}>
                     <Icon icon="feather:github" class="feather"/>
                     GitHub
                 </button>
@@ -309,7 +309,7 @@
                     <Icon icon="feather:clipboard" class="feather"/>
                     Copy system info
                 </button>
-                <button class="inline" onclick={() => openLink('https://github.com/ct-js/ct-js/issues/new/choose')}>
+                <button class="inline" onclick={() => openLink('https://github.com/minititan-studio/nyx.js/issues/new/choose')}>
                     <Icon icon="feather:alert-circle" class="feather"/>
                     Report a bug
                 </button>

@@ -273,7 +273,7 @@
             {#if !appId}
                 <div class="ep-notice warning">
                     An App ID is recommended for desktop builds (e.g.
-                    <code>rocks.ctjs.mygame</code>). Set it in Project Settings →
+                    <code>dev.nyxgame.mygame</code>). Set it in Project Settings →
                     Branding.
                 </div>
             {/if}

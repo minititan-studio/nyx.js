@@ -8,7 +8,9 @@ nyx.js (also branded as **Nyx Studio**) is a 2D game engine with an integrated
 desktop editor. Games are authored in TypeScript and run on PixiJS 7. The
 editor is an Electron app built with Svelte + Vite.
 
-<!-- TODO: add screenshot / GIF here -->
+<p align="center">
+  <img src="branding/github-header.png" alt="nyx.js — a standalone 2D game engine and editor" />
+</p>
 
 ---
 
