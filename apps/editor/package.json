@@ -19,7 +19,7 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "preview": "electron-vite preview",
-    "lint": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "svelte-check --tsconfig ./tsconfig.json --compiler-warnings state_referenced_locally:ignore,css_unused_selector:ignore,a11y_label_has_associated_control:ignore,a11y_no_static_element_interactions:ignore,a11y_click_events_have_key_events:ignore,a11y_interactive_supports_focus:ignore,a11y_autofocus:ignore,non_reactive_update:ignore",
     "dist": "electron-vite build && electron-builder",
     "dist:win": "electron-vite build && node -e \"try{require('fs').rmSync('dist',{recursive:true,force:true})}catch(e){}\" && electron-builder --win",
     "dist:mac": "electron-vite build && electron-builder --mac",

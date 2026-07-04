@@ -40,7 +40,7 @@
 
 <div id="nyx-root">
     {#if $projectOpened && AppView}
-        <svelte:component this={AppView} />
+        <AppView />
     {:else if !$projectOpened}
         <ProjectSelector />
     {/if}
