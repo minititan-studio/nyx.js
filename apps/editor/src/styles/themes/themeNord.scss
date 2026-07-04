@@ -1,0 +1,18 @@
+// themeNord.scss — "Nord" theme
+// Converted from ct.js themeNord.styl
+// Based on the Nord color palette
+
+[data-theme="Nord"] {
+    --background: #2e3440;
+    --background-deeper: #242933;
+    --background-alt: #3b4252;
+    --text: #eceff4;
+    --text-dim: #7b88a1;
+    --border-bright: #4c566a;
+    --border-pale: #3b4252;
+    --accent1: #5e81ac;
+    --accent2: #88c0d0;
+    --warning: #ebcb8b;
+    --success: #a3be8c;
+    --error: #bf616a;
+}

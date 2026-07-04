@@ -1,0 +1,7 @@
+// index.scss — editor root stylesheet entry point
+// Import order matters: variables first (defines :root defaults),
+// then base resets/globals, then theme overrides.
+
+@use './variables';
+@use './base';
+@use './themes/index';

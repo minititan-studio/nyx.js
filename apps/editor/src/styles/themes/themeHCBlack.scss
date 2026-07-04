@@ -1,0 +1,17 @@
+// themeHCBlack.scss — "HC Black" theme (High Contrast Black)
+// Converted from ct.js themeHCBlack.styl
+
+[data-theme="HC Black"] {
+    --background: #000000;
+    --background-deeper: #000000;
+    --background-alt: #0a0a0a;
+    --text: #ffffff;
+    --text-dim: #cccccc;
+    --border-bright: #ffffff;
+    --border-pale: #666666;
+    --accent1: #ffff00;
+    --accent2: #00ffff;
+    --warning: #ff8800;
+    --success: #00ff00;
+    --error: #ff0000;
+}

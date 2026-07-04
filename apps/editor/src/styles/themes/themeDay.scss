@@ -1,0 +1,17 @@
+// themeDay.scss — "Day" theme
+// Converted from ct.js themeDay.styl
+
+[data-theme="Day"] {
+    --background: #f0f0f5;
+    --background-deeper: #e0e0ea;
+    --background-alt: #ffffff;
+    --text: #1a1a2e;
+    --text-dim: #666677;
+    --border-bright: #b0b0c0;
+    --border-pale: #d0d0dd;
+    --accent1: #3355cc;
+    --accent2: #0099cc;
+    --warning: #e08000;
+    --success: #1a8c40;
+    --error: #cc2200;
+}

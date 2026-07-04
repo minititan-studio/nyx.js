@@ -1,0 +1,26 @@
+// variables.scss — CSS custom property defaults (Night theme as :root baseline)
+// All theme files override these via [data-theme="..."] selectors.
+
+:root {
+    // Backgrounds
+    --background: #1a1a2e;
+    --background-deeper: #111122;
+    --background-alt: #252540;
+
+    // Text
+    --text: #e0e0e0;
+    --text-dim: #888888;
+
+    // Borders
+    --border-bright: #333355;
+    --border-pale: #2a2a3e;
+
+    // Accents
+    --accent1: #446adb;
+    --accent2: #7ec8e3;
+
+    // Semantic
+    --warning: #f5a623;
+    --success: #27ae60;
+    --error: #e74c3c;
+}

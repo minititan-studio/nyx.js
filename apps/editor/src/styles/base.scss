@@ -1,0 +1,252 @@
+// base.scss — Global base styles for nyx editor
+// Converted from ct.js common.styl + buildingBlocks.styl
+// All colors use CSS custom properties defined in variables.scss and themes/
+
+// ─── Reset ───────────────────────────────────────────────────────────────────
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Nunito Sans', 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// ─── Typography ──────────────────────────────────────────────────────────────
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 0.5rem;
+}
+
+a {
+    color: var(--accent1);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--accent2);
+        text-decoration: underline;
+    }
+}
+
+code,
+pre {
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 0.875em;
+    background-color: var(--background-deeper);
+    border-radius: 3px;
+}
+
+code {
+    padding: 0.1em 0.3em;
+}
+
+pre {
+    padding: 0.75rem 1rem;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+// ─── Scrollbars ──────────────────────────────────────────────────────────────
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-deeper);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-bright);
+    border-radius: 4px;
+
+    &:hover {
+        background: var(--text-dim);
+    }
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--background-deeper);
+}
+
+// Firefox
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-bright) var(--background-deeper);
+}
+
+// ─── Form Inputs ─────────────────────────────────────────────────────────────
+
+input,
+select,
+textarea,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+textarea,
+select {
+    background-color: var(--background-alt);
+    color: var(--text);
+    border: 1px solid var(--border-bright);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    transition: border-color 0.15s ease;
+
+    &:focus {
+        border-color: var(--accent1);
+    }
+
+    &::placeholder {
+        color: var(--text-dim);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+select {
+    cursor: pointer;
+    appearance: auto;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 4rem;
+}
+
+// ─── Buttons ─────────────────────────────────────────────────────────────────
+
+button {
+    cursor: pointer;
+    background-color: var(--background-alt);
+    color: var(--text);
+    border: 1px solid var(--border-bright);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+        background-color: var(--accent1);
+        border-color: var(--accent1);
+        color: var(--background);
+    }
+
+    &:active {
+        background-color: var(--accent2);
+        border-color: var(--accent2);
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &.primary {
+        background-color: var(--accent1);
+        border-color: var(--accent1);
+        color: var(--background);
+
+        &:hover {
+            background-color: var(--accent2);
+            border-color: var(--accent2);
+        }
+    }
+
+    &.danger {
+        background-color: var(--error);
+        border-color: var(--error);
+        color: #fff;
+    }
+}
+
+// ─── Checkbox / Radio ────────────────────────────────────────────────────────
+
+input[type='checkbox'],
+input[type='radio'] {
+    accent-color: var(--accent1);
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+
+// ─── Dividers ────────────────────────────────────────────────────────────────
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border-bright);
+    margin: 0.5rem 0;
+}
+
+// ─── Utility Classes ─────────────────────────────────────────────────────────
+
+.dimmed {
+    color: var(--text-dim);
+}
+
+.accent {
+    color: var(--accent1);
+}
+
+.danger {
+    color: var(--error);
+}
+
+.success {
+    color: var(--success);
+}
+
+.warning {
+    color: var(--warning);
+}
+
+// ─── Focus Visible ───────────────────────────────────────────────────────────
+
+:focus-visible {
+    outline: 2px solid var(--accent1);
+    outline-offset: 2px;
+}
+
+// ─── Selection ───────────────────────────────────────────────────────────────
+
+::selection {
+    background-color: var(--accent1);
+    color: var(--background);
+}

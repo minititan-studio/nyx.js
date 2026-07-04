@@ -1,0 +1,18 @@
+// themeHorizon.scss — "Horizon" theme
+// Converted from ct.js themeHorizon.styl
+// Horizon is a warm-dark theme inspired by the Horizon VSCode theme
+
+[data-theme="Horizon"] {
+    --background: #1c1e26;
+    --background-deeper: #16181f;
+    --background-alt: #232530;
+    --text: #d5d8da;
+    --text-dim: #6c6f93;
+    --border-bright: #3d404f;
+    --border-pale: #2a2d3a;
+    --accent1: #e95678;
+    --accent2: #fab795;
+    --warning: #fab795;
+    --success: #29d398;
+    --error: #e95678;
+}
