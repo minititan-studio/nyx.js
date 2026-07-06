@@ -92,6 +92,20 @@ export class Player extends Template {
 
 ---
 
+## Meet Nyxi
+
+Nyxi is the nyx.js companion — a chibi astronaut who reacts as you build.
+
+<p align="center">
+  <img src="branding/nyxi/letscode.webp" width="150" alt="Let's code" title="Let's code" />
+  <img src="branding/nyxi/compiling.webp" width="150" alt="Compiling" title="Compiling" />
+  <img src="branding/nyxi/buildsuccess.webp" width="150" alt="Build success" title="Build success" />
+  <img src="branding/nyxi/crashed.webp" width="150" alt="Oh no — error" title="Oh no — error" />
+  <img src="branding/nyxi/allset.webp" width="150" alt="All set" title="All set" />
+</p>
+
+---
+
 ## Contributing
 
 Contributions are welcome — please read [CONTRIBUTING.md](CONTRIBUTING.md)

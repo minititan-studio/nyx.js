@@ -125,9 +125,30 @@ Regenerate rasters after editing any source SVG.
 
 ---
 
-## 7. Mascot
+## 7. Mascot — Nyxi
 
-**Nyxi** — a chibi astronaut companion (see the brand mockup). Raster
-illustration, not covered by these vectors. Place source art under
-`branding/mascot/` (transparent PNGs: base + expressions). Keep her palette in
-the nyx range (violet suit accents, cyan visor glints).
+**Nyxi** — a chibi astronaut companion (raster illustration, not covered by the
+vectors above). Art lives in `branding/nyxi/`.
+
+- **Committed:** optimized `.webp` (512px, ~35–45KB each) — use these in the
+  app and docs.
+- **Masters:** the 1024px `.png` originals (~1.6MB each) are gitignored
+  (`branding/nyxi/*.png`) to keep the repo lean. Keep them locally / in an
+  external store; re-run the WebP optimization if you re-export.
+- **Note:** originals have a soft grey background (not transparent). For clean
+  overlay on the dark UI, export transparent-background versions.
+
+### Expressions → suggested states
+
+| File | Moment |
+|------|--------|
+| `letscode` | project open / empty state |
+| `compiling` | build or export running |
+| `buildsuccess` | build/export succeeded |
+| `crashed` | build/runtime error |
+| `inspecting` | debugger / inspector |
+| `hmm` | warnings / needs input |
+| `takingabreak` | idle |
+| `allgood`, `allset`, `goodjob`, `yes` | success / confirmations |
+
+Keep her palette in the nyx range (violet suit accents, cyan visor glints).
